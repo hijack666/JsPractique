@@ -4,7 +4,9 @@ const gulp = require("gulp");
 const webpack = require("webpack-stream");
 const browsersync = require("browser-sync");
 
-const dist = "./dist/";
+// const dist = "./dist/";
+const dist = "F:/OpenServer/domains/JsPractique";  // Можно компилить сразу куда требуется
+
 
 gulp.task("copy-html", () => {
     return gulp.src("./src/index.html") //берем хтмл
