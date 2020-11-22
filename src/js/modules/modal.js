@@ -34,6 +34,7 @@ const modals = () => {
             modal.style.display = "none";
             document.body.style.overflow = "";
             document.body.style.marginRight = `0px`;
+            document.body.style.overflowY = 'scroll';
             // document.body.classList.remove('modal-open');
         });
 
@@ -46,6 +47,7 @@ const modals = () => {
                 modal.style.display = "none";
                 document.body.style.overflow = "";
                 document.body.style.marginRight = `0px`;
+                document.body.style.overflowY = 'scroll';
                 // document.body.classList.remove('modal-open');
             }
         });
@@ -79,7 +81,7 @@ const modals = () => {
     bindModal('.popup_calc_profile_button', '.popup_calc_end', '.popup_calc_end_close', false); //false не дает закрыть модалку при клике вне ее
 
 
-    showModalByTime('.popup', 60000);
+    showModalByTime('.popup.timed-popup', 10000);
 };
 
 export default modals;
